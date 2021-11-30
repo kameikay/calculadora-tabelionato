@@ -146,14 +146,14 @@ function handleFocusout(input) {
   }).format(getTotalValue(inputNumber));
 }
 
-inputValue.addEventListener("focusout", () => handleFocusout(inputValue.value.replace(',', '.')));
+inputValue.addEventListener("focusout", () => handleFocusout(inputValue.value.replaceAll('.', '').replaceAll(',','.')));
 
 function currency(e) {
   let value = e.target.value
 
   value = value.replace(/\D/g, "")
   value = value.replace(/(\d)(\d{2})$/, "$1,$2")
-  value = value.replace(/(?=(\d{3})+(\D))\b/g, "")
+  value = value.replace(/(?=(\d{3})+(\D))\B/g, ".")
 
   e.target.value = value
 
