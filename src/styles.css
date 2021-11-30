@@ -1,0 +1,162 @@
+:root {
+  --red: #d75c6a;
+  --yellow: #e0b32d;
+  --green: #3ef757;
+  --blue: #2d5de0;
+  --pink: #fc3285;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("https://wallpapercave.com/wp/wp4892326.jpg") no-repeat center/cover;
+}
+
+.calculadora-container {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.45);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.calculadora-container .calculadora-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculadora-container .calculadora-title > h3 {
+  color: var(--red);
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calculadora-container .calculadora-title .calculadora-values {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculadora-container .calculadora-title .calculadora-values > label {
+  margin-right: 0.5rem;
+}
+
+.calculadora-container .calculadora-title .calculadora-values > input {
+  width: 80%;
+  border-radius: 20px;
+  border: none;
+  height: 1.5rem;
+  padding: 0.5rem;
+}
+
+.calculadora-container .calculadora-title .calculadora-values > input:focus {
+  outline: none;
+  border: 2px solid var(--blue);
+}
+
+.calculadora-container .calculadora-results {
+  width: 100%;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculadora-container .calculadora-results .results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculadora-container .calculadora-results .results-container > h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  color: var(--red);
+}
+
+.calculadora-container .calculadora-results .results-container > h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.calculadora-container .calculadora-warnings {
+  padding: 0 2rem 1rem;
+}
+
+.calculadora-container .calculadora-warnings > p {
+  text-align: justify;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=styles.css.map */

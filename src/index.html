@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+  <div class="calculadora-container">
+    <div class="calculadora-title">
+      <h3>COMPRA E VENDA</h3>
+      <div class="calculadora-values">
+        <label for="valor">R$</label>
+        <input type="text" id="valor" data-type="currency" maxlength="13">
+      </div>
+    </div>
+
+    <div class="calculadora-results">
+      <div class="results-container escritura">
+        <h4>Escritura</h4>
+        <h3><span id="escritura">R$ 0,00</span></h3>
+      </div>
+
+      <div class="results-container registro">
+        <h4>Registro</h4>
+        <h3> <span id="registro">R$ 0,00</span></h3>
+      </div>
+
+      <div class="results-container itbi">
+        <h4>ITBI</h4>
+        <h3> <span id="itbi">R$ 0,00</span></h3>
+      </div>
+
+      <div class="results-container certidao">
+        <h4>Certidão</h4>
+        <h3> <span id="certidao">R$ 0,00</span></h3>
+      </div>
+
+      <div class="results-container total">
+        <h4>Total</h4>
+        <h3> <span id="total">R$ 0,00</span></h3>
+      </div>
+    </div>
+
+    <div class="calculadora-warnings">
+      <p>Atenção!</p>
+
+      <p>Este orçamento é apenas uma estimativa. O valor final será confirmado quando do agendamento da assinatura da
+        sua escritura, podendo variar em razão de peculiaridades do caso específico. </p>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>
